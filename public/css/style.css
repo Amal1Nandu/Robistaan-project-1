@@ -1,6 +1,29 @@
+html, 
 body {
-    background-color: #F5F0E1;
+	width: 100%;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  height: 100dvh;
+  background-color: ivory;
+  background-image: url('../img/5-Reasons-To-Study-Photography.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/*nav button*/
+#nav-button {
+  position: fixed;
+  top:1rem;
+  right:1rem;
+  z-index: 1000;
+}
+
 
 /* nav list ul */
 #navbar-hamburger .custom-nav-ul {
@@ -9,19 +32,33 @@ body {
   font-style: normal;
 display: flex;
 text-align: center;
-color: #3D405B;
 
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+  
 }
 
 /* nav list li */
 #navbar-hamburger .custom-nav-li{
 clear: both;
-background-color: #d9d3c1;
+ 
+color: white; /* need to change */
 transition: background-color 2s ease-in !important;
 width: 100%;
 animation: animate 800ms forwards ease;
+ margin: 20px 0;
 }
+
+#navbar-hamburger a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
 
 /*animation-start*/
 #navbar-hamburger .custom-nav-li:nth-of-type(1) {
