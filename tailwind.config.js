@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./public/*.{html,js}"],
+  content: ["./public/*.{html,js}",
+  ],
   theme: {
     extend: {
             keyframes: {
@@ -11,7 +12,7 @@ export default {
       },
       animation: {
         animate: 'animate 800ms forwards ease',
-      },
+      }, 
     },
   },
 
