@@ -13,6 +13,9 @@ export default {
       animation: {
         animate: 'animate 800ms forwards ease',
       }, 
+      fontFamily: {
+        playfair: '"Playfair Display", serif;'
+      }
     },
   },
 
