@@ -8,8 +8,7 @@
 <!--tailwind-->
 <link rel="stylesheet" href="./style.css">
 
-    <!--flowbite css-->
-<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+
 
 </head>
 <body>
@@ -59,58 +58,49 @@
 
 <main class="font-playfair">
 <!--Carousel section1 start-->
-<section >
-<div id="default-carousel" class="relative  w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative  h-56 overflow-hidden md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/Carousel1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden carousel-item  duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/Carousel2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden carousel-item  duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/Carousel3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden carousel-item  duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/Carousel4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden carousel-item  duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/Carousel5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+<section>
+<div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <!--carousel image1-->
+    <img
+      src="./img/Carousel1.webp"
+      class="w-full object-cover overflow-hidden lg:h-screen" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <!--carousel image2-->
+    <img
+      src="./img/Carousel2.jpg"
+      class="w-full object-cover overflow-hidden lg:h-screen" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class=" absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <!--carousel image3-->
+    <img
+      src="./img/Carousel3.jpg"
+      class="w-full object-cover overflow-hidden lg:h-screen" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <!--carousel image4-->
+    <img
+      src="./img/Carousel4.jpg"
+      class="w-full object-cover overflow-hidden lg:h-screen" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
 </div>
-
 </section>
 <!--Carousel section1 end-->
 
@@ -123,8 +113,8 @@
 <!--Quates section2-end-->
 
 <!--title1 start-->
-<section class="flex flex-col justify-center text-left p-10 h-[150vh] bg-stone-800 ">
-<h2 class="lg:text-8xl font-semibold text-orange-200 leading-5">We <br> capture  <br> your happiness</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-[150vh] bg-stone-800 ">
+<h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-orange-200 leading-tight  lg:leading-normal ">We <br> capture  <br> your happiness</h2>
 </section>
 <!--title1 end-->
 
@@ -134,26 +124,27 @@
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The beauty of your wedding moments</h2>
   </div>
   <div class="flex  justify-center items-center">   
-<img class="md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel4.jpg" alt="image description">
+<img class="rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel4.jpg" alt="image description">
   </div>
 </section>
 <!--image1 section3-end-->
 
 <!--image2 section4-start-->
 <section class="grid lg:grid-cols-2 lg:h-screen bg-red-50">
-    <div class="flex  justify-center items-center">   
-<img class=" md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel3.jpg" alt="image description">
+    <div class="order-2 lg:order-1 flex  justify-center items-center">   
+<img class=" rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel3.jpg" alt="image description">
   </div>
-  <div class="flex flex-col justify-center text-left p-10">
+  <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The glow of your pragnancy</h2>
   </div>
+</section> 
+ 
+<!--image1 section3-end-->
 
-</section>
-<!--image2 section4-end-->
 
 <!--title2 section start-->
-<section class="flex flex-col justify-center text-left p-10 h-[150vh] bg-stone-800 ">
-  <h2 class="lg:text-8xl font-semibold text-orange-200 leading-5">We <br> share  <br> your smile</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-[150vh] bg-stone-800 ">
+  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-orange-200 leading-tight  lg:leading-normal">We <br> share  <br> your smile</h2>
 </section>
 <!--title2 section end-->
 
@@ -163,25 +154,25 @@
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The first moment with your baby</h2>
   </div>
   <div class="flex  justify-center items-center ">   
-<img class="md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel1.webp" alt="image description">
+<img class="rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel1.webp" alt="image description">
   </div>
 </section>
 <!--image3 section5-end-->
 
 <!--image4 section6-start-->
 <section class="grid lg:grid-cols-2 lg:h-screen bg-red-50">
-    <div class="flex justify-center items-center">   
-<img class="md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel2.jpg" alt="image description">
+    <div class="order-2 lg:order-1 flex justify-center items-center">   
+<img class="rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel2.jpg" alt="image description">
   </div>
-  <div class="flex flex-col justify-center text-left p-10">
+  <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The joy of birthday</h2>
   </div>
 
 </section>
 
 <!--title3 section6-end-->
-<section class="flex flex-col justify-center text-left p-10 lg:h-[150vh] bg-stone-800 ">
-  <h2 class="lg:text-8xl font-semibold text-orange-200 leading-5">We <br> colour  <br> your dreams</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-[150vh] bg-stone-800 ">
+  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-orange-200 leading-tight  lg:leading-normal">We <br> colour  <br> your dreams</h2>
 </section>
 <!--title3 section7 end-->
 
@@ -191,17 +182,17 @@
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The warmth of family moments</h2>
   </div>
   <div class="flex  justify-center items-center ">   
-<img class="md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel4.jpg" alt="image description">
+<img class="rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel4.jpg" alt="image description">
   </div>
 </section>
 <!--image5 section5-end-->
 
-<!--image4 section6-start-->
+<!--image6 section6-start-->
 <section class="grid lg:grid-cols-2 lg:h-screen bg-red-50">
-    <div class="flex justify-center items-center">   
-<img class="md:rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel3.jpg" alt="image description">
+    <div class="order-2 lg:order-1 flex justify-center items-center">   
+<img class="rounded-lg h-96 overflow-hidden object-cover" src="./img/Carousel3.jpg" alt="image description">
   </div>
-  <div class="flex flex-col justify-center text-left p-10">
+  <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
     <h2 class="split text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The excitment of celebration</h2>
   </div>
 
@@ -225,10 +216,6 @@
 <!--video scetion end-->
 
 </main>
-
-<footer>
-  
-
 <footer class="bg-stone-800 ">
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
@@ -335,12 +322,10 @@
         </div>
       </div>
     </div>
-</footer>
+
 
 </footer>
 
-<!--flowbite-->
-<script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
 
 <!--Gsap-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
