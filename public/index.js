@@ -35,19 +35,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //text animation
 document.addEventListener('DOMContentLoaded', () => {
-let mySplitText = new SplitType(".split", {type: "chars"});
-let chars = mySplitText.chars;
- 
+  let splitTextClasses = [".split-1", ".split-2", ".split-3", ".split-4", ".split-5", ".split-6", ".split-7"];
 
-gsap.from(chars, {
+splitTextClasses.forEach((splitClass, index) => {
+  let mySplitText = new SplitType(splitClass, {type: "chars"});
+  let chars = mySplitText.chars;
+  gsap.from(chars, {
   yPercent: 130,
   stagger: 0.05,
   ease: "back.out",
   duration: 1,
   scrollTrigger: {
-    trigger: '.split',
-    start: "top 75%",
-    
-  }
-})
+    trigger: splitClass,
+    start: "top 80%",   
+  },
+ 
+});
+});
 });
