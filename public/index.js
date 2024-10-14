@@ -41,15 +41,24 @@ splitTextClasses.forEach((splitClass, index) => {
   let mySplitText = new SplitType(splitClass, {type: "chars"});
   let chars = mySplitText.chars;
   gsap.from(chars, {
-  yPercent: 130,
-  stagger: 0.05,
-  ease: "back.out",
-  duration: 1,
-  scrollTrigger: {
-    trigger: splitClass,
-    start: "top 80%",   
-  },
+  // yPercent: 130,
+  // stagger: 0.05,
+  // ease: "back.out",
+  // duration: 1,
+  // scrollTrigger: {
+  //   trigger: splitClass,
+  //   start: "top 80%",   
+  // },
  
+  xPercent: -100,
+  opacity: 0,
+ stagger: 0.1,
+ ease:"power2.out",
+ duration:0.3,
+ scrollTrigger: {
+  trigger: splitClass,
+  start: "top 80%",
+ }
 });
 });
 });
