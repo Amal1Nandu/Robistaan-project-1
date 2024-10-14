@@ -1145,6 +1145,13 @@ html{
   }
 }
 
+.footer-title{
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
 .join > :where(*:not(:first-child)):is(.btn){
   margin-inline-start: calc(var(--border-btn) * -1);
 }
@@ -1613,10 +1620,6 @@ html{
   height: 100%;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -1635,14 +1638,6 @@ html{
 
 .max-w-screen-xl{
   max-width: 1280px;
-}
-
-.max-w-4{
-  max-width: 1rem;
-}
-
-.max-w-4xl{
-  max-width: 56rem;
 }
 
 .-translate-x-1\/2{
@@ -1677,20 +1672,20 @@ html{
   cursor: pointer;
 }
 
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.grid-flow-col{
+  grid-auto-flow: column;
 }
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1787,13 +1782,17 @@ html{
   background-color: rgb(255 255 255 / 0.3);
 }
 
-.bg-gray-200{
+.bg-neutral{
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
 }
 
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
+}
+
+.fill-current{
+  fill: currentColor;
 }
 
 .object-cover{
@@ -1827,9 +1826,9 @@ html{
   padding-bottom: 0px;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-16{
@@ -1855,11 +1854,6 @@ html{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-8{
@@ -1980,6 +1974,11 @@ html{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutral-content{
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
 }
 
 .shadow-xl{
@@ -2177,10 +2176,6 @@ html{
     order: 2;
   }
 
-  .lg\:grid{
-    display: grid;
-  }
-
   .lg\:h-\[150vh\]{
     height: 150vh;
   }
@@ -2193,6 +2188,10 @@ html{
     height: 100vh;
   }
 
+  .lg\:h-auto{
+    height: auto;
+  }
+
   .lg\:min-h-screen{
     min-height: 100vh;
   }
@@ -2203,14 +2202,6 @@ html{
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:gap-16{
