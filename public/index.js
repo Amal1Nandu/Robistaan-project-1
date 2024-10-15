@@ -6,7 +6,14 @@ gsap.registerPlugin(SplitType, ScrollTrigger);
 // navbar
 document.getElementById('nav-button').addEventListener('click', function() {
   const navbar = document.getElementById('navbar-hamburger');
-  navbar.classList.toggle('hidden');
+  if (navbar?.classList.contains('hidden')) {
+    navbar.classList.remove('hidden');
+    navbar.classList.add('flex');
+  } else {
+    navbar.classList.remove('flex');
+    navbar.classList.add('hidden');
+  }
+  // navbar.classList.toggle('hidden');
 });
 
 // carousel auto play
