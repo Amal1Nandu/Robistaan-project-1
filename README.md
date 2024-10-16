@@ -33,3 +33,26 @@ Bold and large font title (3 titles used in this website)
 
    ![Screenshot 2024-10-15 204018](https://github.com/user-attachments/assets/12728f2d-539a-46ee-8970-a8276ed46291)
 
+### Gallery
+semi-bold with large font captions, regarding photo
+This photo links to a related gallery of individuals (not connected yet) 
+Each title is connected with 2 pictures (total 6 pictures)
+1) The beauty of your wedding moments
+2) The glow of your pregnancy
+3) The first moment with your baby
+4) The joy of birthday
+5) The warmth of family moments
+6) The excitement of celebration
+
+   ![Screenshot 2024-10-15 204045](https://github.com/user-attachments/assets/16d894e2-644d-4d12-ad76-8d7ef9f06fad)
+
+### Video section
+4 columns lead to the YouTube video
+
+  ![Screenshot 2024-10-15 204133](https://github.com/user-attachments/assets/2605f97a-f9f1-44d9-be81-e1babc38ae33)
+
+### a photo and a footer section
+
+![Screenshot 2024-10-15 204202](https://github.com/user-attachments/assets/dbc546c1-486a-4ff0-bda3-9256a29f9a5e)
+
+
