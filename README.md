@@ -16,14 +16,14 @@ With a mild view of the background
 Carousel - slide with 4 images for different styles of events
 (will show the exact content included in the website)
 
-(https://github.com/user-attachments/assets/4268267f-9f2f-4f30-bca4-81ef223a13e8)
+![carousel](https://github.com/user-attachments/assets/5d424720-c4a2-4cea-abdd-bbea2dd77be7)
 
 ### Quotes regarding the website
 Quote wrapped with 8 photos (top and bottom)
 Shows the unexpected moments capture 
 Photos are in the black-white mode, it colors only on hover
 
-(https://github.com/user-attachments/assets/d9e49b5b-dc58-4d55-8149-006a700d2268)
+![Screenshot 2024-10-15 203956](https://github.com/user-attachments/assets/e4e63ad1-e905-4e77-bc1a-ba3c0b3b1ade)
 
 ### Titles
 Bold and large font title (3 titles used in this website)
