@@ -31,5 +31,5 @@ Bold and large font title (3 titles used in this website)
 2) We share your smile
 3) We color your dreams
 
-   (https://github.com/user-attachments/assets/28d0b7d0-a075-4ddd-82a9-b878d9821a2a)
+   ![Screenshot 2024-10-15 204018](https://github.com/user-attachments/assets/12728f2d-539a-46ee-8970-a8276ed46291)
 
