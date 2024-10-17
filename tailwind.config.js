@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./public/*.{html,js}",
-  ],
+  content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
             keyframes: {
@@ -14,7 +13,8 @@ export default {
         animate: 'animate 800ms forwards ease',
       }, 
       fontFamily: {
-        playfair: '"Playfair Display", serif;'
+        playfair: ['"Playfair Display"', 'serif'],
+        lavishly: ['"Cormorant SC"', 'serif']
       }
     },
   },

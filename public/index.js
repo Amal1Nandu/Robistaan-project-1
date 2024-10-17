@@ -13,7 +13,7 @@ document.getElementById('nav-button').addEventListener('click', function() {
     navbar.classList.remove('flex');
     navbar.classList.add('hidden');
   }
-  // navbar.classList.toggle('hidden');
+ 
 });
 
 // carousel auto play
@@ -48,14 +48,6 @@ splitTextClasses.forEach((splitClass, index) => {
   let mySplitText = new SplitType(splitClass, {type: "chars"});
   let chars = mySplitText.chars;
   gsap.from(chars, {
-  // yPercent: 130,
-  // stagger: 0.05,
-  // ease: "back.out",
-  // duration: 1,
-  // scrollTrigger: {
-  //   trigger: splitClass,
-  //   start: "top 80%",   
-  // },
  
   xPercent: -100,
   opacity: 0,
