@@ -41,23 +41,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //text animation
-document.addEventListener('DOMContentLoaded', () => {
-  let splitTextClasses = [".split-1", ".split-2", ".split-3", ".split-4", ".split-5", ".split-6", ".split-7"];
+// document.addEventListener('DOMContentLoaded', () => {
+//   let splitTextClasses = [".split-1", ".split-2", ".split-3", ".split-4", ".split-5", ".split-6", ".split-7"];
 
-splitTextClasses.forEach((splitClass, index) => {
-  let mySplitText = new SplitType(splitClass, {type: "chars"});
-  let chars = mySplitText.chars;
-  gsap.from(chars, {
+// splitTextClasses.forEach((splitClass, index) => {
+//   let mySplitText = new SplitType(splitClass, {type: "chars"});
+//   let chars = mySplitText.chars;
+
+//   //GSAP animation with ScrollTrigger
+//   gsap.from(chars, {
+//   xPercent: -100,
+//   opacity: 0,
+//  stagger: 0.1,
+//  ease:"power2.out",
+//  duration:0.3,
+//  scrollTrigger: {
+//   trigger: splitClass,
+//   start: "top 80%",
  
-  xPercent: -100,
-  opacity: 0,
- stagger: 0.1,
- ease:"power2.out",
- duration:0.3,
- scrollTrigger: {
-  trigger: splitClass,
-  start: "top 80%",
- }
-});
-});
+//  }
+// });
+// });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Define the elements to animate
+  const splitTextClasses = [".split-1", ".split-2", ".split-3", ".split-4", ".split-5", ".split-6", ".split-7"];
+
+  splitTextClasses.forEach((splitClass) => {
+    // Initialize SplitType for each class
+    const mySplitText = new SplitType(splitClass, { type: "chars" });
+    const chars = mySplitText.chars;
+
+    // Intersection Observer options
+    const observerOptions = {
+      threshold: 0.5 // Adjust the threshold as needed
+    };
+
+    // Observer to trigger animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Trigger GSAP animation on the characters when they are in view
+          gsap.fromTo(chars, {
+            xPercent: -100,
+            opacity: 0,
+          }, {
+            xPercent: 0,
+            opacity: 1,
+            stagger: 0.1,
+            ease: "power2.out",
+            duration: 0.3,
+          });
+          // Optional: unobserve after animation to prevent re-triggering
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe each text section
+    document.querySelectorAll(splitClass).forEach((element) => {
+      observer.observe(element);
+    });
+  });
 });
