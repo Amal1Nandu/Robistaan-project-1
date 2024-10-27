@@ -1710,10 +1710,6 @@ html{
     max-width: 36rem;
   }
 
-  .lg\:snap-none{
-    scroll-snap-type: none;
-  }
-
   .lg\:snap-y{
     scroll-snap-type: y var(--tw-scroll-snap-strictness);
   }
