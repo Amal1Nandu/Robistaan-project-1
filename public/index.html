@@ -9,13 +9,12 @@
 <link rel="stylesheet" href="./style.css">
 
 
-
 </head>
-<body class="bg-white scroll-smooth">
+<body class="bg-[#C7B7A3] scroll-smooth">
 
   <header class="lg:snap-start">
 <!-- Navbar Start flex-wrap mx-auto-->
-<nav class="border-gray-200  fixed w-full top-0 z-50">
+<nav class="border-gray-300  fixed w-full top-0 z-50">
   <div class="max-w-screen-xl flex  items-center justify-between  p-4">
     <!--space-x-3 rtl:space-x-reverse-->
     <a href="#" class="flex items-center  ">
@@ -61,38 +60,40 @@
 
 <main class="font-playfair lg:h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory">
 <!--Carousel section1 start-->
-<section class="lg:h-screen lg:snap-start">
-<div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
+<section class="h-screen lg:snap-start">
+  <div class="carousel w-full overflow-hidden">
+<div class="carousel-container flex  transition-transform duration-500 ease-in-out">
+  <div id="slide1" class="carousel-item  w-full  min-w-full">
     <!--carousel image1-->
     <img
       src="./img/4.webp"
-      class=" w-full object-cover overflow-hidden lg:h-screen" alt="slide-1" />
+      class=" w-full object-cover overflow-hidden h-screen" alt="slide-1" />
   </div>
-  <div id="slide2" class="carousel-item relative w-full">
+  <div id="slide2" class="carousel-item  w-full min-w-full">
     <!--carousel image2-->
     <img
       src="./img/celebration2.jpg"
-      class=" w-full object-cover overflow-hidden lg:h-screen" alt="slide-2" />
+      class=" w-full object-cover overflow-hidden h-screen" alt="slide-2" />
   </div>
-  <div id="slide3" class="carousel-item relative w-full">
+  <div id="slide3" class="carousel-item  w-full min-w-full bg-red-700">
     <!--carousel image3-->
     <img
       src="./img/pragnancy2.jpg"
-      class="lazyload w-full object-cover overflow-hidden lg:h-screen" alt="slide-3" />
+      class="lazyload w-full object-cover overflow-hidden h-screen" alt="slide-3" />
   </div>
-  <div id="slide4" class="carousel-item relative w-full">
+  <div id="slide4" class="carousel-item  w-full min-w-full">
     <!--carousel image4-->
     <img
       src="./img/newborn.jpg"
-      class="lazyload w-full object-cover overflow-hidden lg:h-screen" alt="slide-4" />
+      class="lazyload w-full object-cover overflow-hidden h-screen" alt="slide-4" />
+  </div>
   </div>
 </div>
 </section>
 <!--Carousel section1 end-->
 
 <!--Quates section2-start-->
-<section class="bg-red-50 h-auto lg:h-screen lg:snap-start flex flex-col justify-between">
+<section class="bg-[#E8D8C4] h-auto lg:h-screen lg:snap-start flex flex-col justify-between">
   <!--horizontal pics layout- upper part-->
 
   <div class=" grid grid-cols-4 gap-4 p-1">
@@ -102,7 +103,7 @@
 <div class="lazyload rounded-lg object-cover transition duration-500 ease-in-out filter grayscale hover:filter-none"> <img class="rounded-lg" src="./img/title-img/title-img4.jpg" alt=""></div>
   </div>
  
-  <blockquote class=" sm:text-2xl md:text-3xl py-4 m-0 italic font-light text-center  text-red-900 ">
+  <blockquote class=" sm:text-2xl md:text-3xl py-4 m-0 italic font-light text-center  text-[#561C24] ">
 <p class="split-1 leading-normal">Colors are the sparks <br> that <br> ignite creativity</p>
   </blockquote>
   <!--horizontal pics layout- bottom part-->
@@ -116,15 +117,15 @@
 <!--Quates section2-end-->
 
 <!--title1 start-->
-<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:snap-start bg-zinc-700 ">
-<h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-white leading-tight  lg:leading-normal ">We <br> capture  <br> your happiness</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:snap-start bg-[#561C24] ">
+<h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight  lg:leading-normal ">We <br> capture  <br> your happiness</h2>
 </section>
 <!--title1 end-->
 
 <!--image1 section3-start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4]  sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
   <div class="flex flex-col justify-center text-left p-10">
-    <h2 class="split-2 text-red-800 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The beauty of your wedding moments</h2>
+    <h2 class="split-2 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The beauty of your wedding moments</h2>
   </div>
   <div class="flex  justify-center items-center">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/wedding moment.webp" alt="wedding moment">
@@ -133,12 +134,12 @@
 <!--image1 section3-end-->
 
 <!--image2 section4-start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4]  sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
     <div class="order-2 lg:order-1 flex  justify-center items-center">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/pragnant lady.webp" alt="image of pregnant lady">
   </div>
   <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
-    <h2 class="split-3 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The glow of your pragnancy</h2>
+    <h2 class="split-3 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The glow of your pragnancy</h2>
   </div>
 </section> 
  
@@ -146,15 +147,15 @@
 
 
 <!--title2 section start-->
-<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-zinc-700 mt-1">
-  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-white leading-tight  lg:leading-normal">We <br> share  <br> your smile</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-[#561C24] mt-1">
+  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight  lg:leading-normal">We <br> share  <br> your smile</h2>
 </section>
 <!--title2 section end-->
 
 <!--image3 section5-start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
   <div class="flex flex-col justify-center text-left p-10">
-    <h2 class="split-4 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The first moment with your baby</h2>
+    <h2 class="split-4 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The first moment with your baby</h2>
   </div>
   <div class="flex  justify-center items-center ">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/first-bay.jpg" alt="first moment with baby">
@@ -163,26 +164,26 @@
 <!--image3 section5-end-->
 
 <!--image4 section6-start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
     <div class="order-2 lg:order-1 flex justify-center items-center">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/birthday-moment.jpg" alt="birthday celebration">
   </div>
   <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
-    <h2 class="split-5 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The joy of birthday</h2>
+    <h2 class="split-5 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The joy of birthday</h2>
   </div>
 
 </section>
 
 <!--title3 section6-end-->
-<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-zinc-700 mt-1 ">
-  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-white leading-tight  lg:leading-normal">We <br> colour  <br> your dreams</h2>
+<section class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-[#561C24] mt-1 ">
+  <h2 class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight  lg:leading-normal">We <br> colour  <br> your dreams</h2>
 </section>
 <!--title3 section7 end-->
 
 <!--image5 section8 start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3 md:m-3">
   <div class="flex flex-col justify-center text-left p-10">
-    <h2 class="split-6 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The warmth of family moments</h2>
+    <h2 class="split-6 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The warmth of family moments</h2>
   </div>
   <div class="flex  justify-center items-center ">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/family.jpg" alt="moment with family">
@@ -191,18 +192,18 @@
 <!--image5 section5-end-->
 
 <!--image6 section6-start-->
-<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-red-50 sm:bg-white sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3">
+<section class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3">
     <div class="order-2 lg:order-1 flex justify-center items-center">   
 <img class="lazyload rounded-lg h-96 overflow-hidden object-cover transition transform hover:-translate-y-3 cursor-pointer" src="./img/celebration moment.webp" alt="celebrating moment">
   </div>
   <div class="order-1 lg:order-2 flex flex-col justify-center text-left p-10">
-    <h2 class="split-7 text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The excitment of celebration</h2>
+    <h2 class="split-7 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16">The excitment of celebration</h2>
   </div>
 
 </section>
 
 <!--video scetion start-->
-<section class="h-auto bg-red-50 mt-1 lg:snap-start"> 
+<section class="h-auto bg-[#E8D8C4] mt-1 lg:snap-start"> 
   <!--two video-->
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
       <!--video-1-->
@@ -236,8 +237,8 @@
 </div>
 </section>
 
-<!--footer section-start-->
-<footer class="footer bg-neutral text-neutral-content p-10 lg:snap-start">
+<!--footer section-start bg-neutral-->
+<footer class="footer bg-[#561C24] text-[#E8D8C4] p-10 lg:snap-start">
     <!--logo,company name-->
   <aside>
     <svg
