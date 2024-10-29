@@ -38,28 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(nextSlide, 3000); // Change slide every 3 seconds
 });
 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   let currentSlide = 0;
-//   const slides = document.querySelectorAll('.carousel-item');
-//   const totalSlides = slides.length;
-  
-//   const showSlide = (index) => {
-//     slides.forEach((slide, i) => {
-//       slide.style.display = i === index ? 'block' : 'none';
-//     });
-//   };
-
-//   const nextSlide = () => {
-//     currentSlide = (currentSlide + 1) % totalSlides;
-//     showSlide(currentSlide);
-//   };
-  
-//   showSlide(currentSlide); // Initialize with the first slide
-//   setInterval(nextSlide, 3000); // Change slide every 3 seconds
-// });
-
-//text animation
+// text animation
 
 document.addEventListener('DOMContentLoaded', () => {
   // Define the elements to animate
@@ -101,4 +80,23 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(element);
     });
   });
+});
+
+// navbar hidden in video section
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.getElementById('navbar');
+  const videoSection = document.getElementById('video-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navbar.style.display = 'none'; // Hide navbar
+      } else {
+        navbar.style.display = 'block'; // Show navbar
+      }
+    });
+  }, { threshold: 0.5 }); // Adjust threshold as needed
+
+  observer.observe(videoSection);
 });
