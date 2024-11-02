@@ -6,6 +6,7 @@ gsap.registerPlugin(SplitType, ScrollTrigger);
 // navbar
 document.getElementById('nav-button').addEventListener('click', function() {
   const navbar = document.getElementById('navbar-hamburger');
+  
   if (navbar?.classList.contains('hidden')) {
     navbar.classList.remove('hidden');
     navbar.classList.add('flex');
@@ -19,10 +20,14 @@ document.getElementById('nav-button').addEventListener('click', function() {
 // carousel auto play
 
 document.addEventListener('DOMContentLoaded', function() {
-  let currentSlide = 0;
+ 
+    const carouselContainer = document.querySelector('.carousel-container');
   const slides = document.querySelectorAll('.carousel-item');
+  
+  if (carouselContainer && slides.length > 0) {
+   let currentSlide = 0;
   const totalSlides = slides.length;
-  const carouselContainer = document.querySelector('.carousel-container');
+
 
   const showSlide = (index) => {
     const offset = -index * 100; // Calculate the offset for the slide
@@ -36,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showSlide(currentSlide); // Initialize with the first slide
   setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
 });
 
 // text animation
@@ -88,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navbar = document.getElementById('navbar');
   const videoSection = document.getElementById('video-section');
 
+  if (videoSection) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -99,4 +106,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { threshold: 0.5 }); // Adjust threshold as needed
 
   observer.observe(videoSection);
+}
 });

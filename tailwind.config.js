@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+import tailwindScrollbar from 'tailwind-scrollbar';
+import daisyui from 'daisyui';
+
+export default  {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-            keyframes: {
+      keyframes: {
         animate: {
           '0%': { transform: 'skewX(45deg) scaleY(0)' },
           '100%': { transform: 'skewX(0deg) scaleY(1)' },
@@ -11,16 +15,18 @@ export default {
       },
       animation: {
         animate: 'animate 800ms forwards ease',
-      }, 
+      },
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
-        lavishly: ['"Cormorant SC"', 'serif']
-      }
+        lavishly: ['"Cormorant SC"', 'serif'],
+        Dancing: [  "Tangerine", 'cursive'],
+        tangerine: ['"Tangerine"', 'cursive'],
+
+      },
     },
   },
-
   plugins: [
-    require('daisyui'),
+    daisyui,
+    tailwindScrollbar, 
   ],
 };
-
