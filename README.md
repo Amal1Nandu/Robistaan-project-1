@@ -2,6 +2,8 @@
 
 Colors Of Happiness (website name)
 This website uses a storytelling approach to its design.
+link:  https://amaltechworld.github.io/colours-of-happines-project-1-front-end-/
+[currently activate - total pages-3, in home- The beauty of wedding moment > gallery (1st photo) > gallery of individual couple ]
 
 ## Purpose of this project
 website for photography (first page only, sample structure of website)
